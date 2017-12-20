@@ -147,57 +147,63 @@ h2 {
 .main-nav li li a:hover {
   color:                #660000;
 }
-.nav-social, .nav-user {
+.nav-home {
+  left:                 3em;
+  font-size:            0.75em;
+  position:             absolute;
+  top:                  5.65em;
+  text-transform:       uppercase;
+}
+.nav-social, .nav-home, .nav-design, .nav-logos, .nav-about {
   color:                black;
 }
 .nav-social-left {
   position:             absolute;
-  left:                 3em;
+  left:                 6em;
 }
 .nav-social-center {
   position:             absolute;
-  left:                 4.5em;
+  left:                 7.5em;
 }
 .nav-social-right {
   position:             absolute;
-  left:                 6em;
+  left:                 9em;
 }
 .nav-social:hover {
   color:                gray;
 }
 .logo {
   position:             absolute;
-  width:                180px;
+  width:                170px;
   left:                 42.25%;
   top:                  1em;
-}
-.logo:hover {
-
+  padding:              0em 5px 0em 5px;
 }
 .nav-design {
   font-size:            0.75em;
   position:             absolute;
   right:                15em;
-  top:                  5.5em;
+  top:                  5.65em;
   text-transform:       uppercase;
 }
 .nav-logos {
   font-size:            0.75em;
   position:             absolute;
   right:                9em;
-  top:                  5.5em;
+  top:                  5.65em;
   text-transform:       uppercase;
 }
 .nav-about {
   font-size:            0.75em;
   position:             absolute;
   right:                3em;
-  top:                  5.5em;
+  top:                  5.65em;
   text-transform:       uppercase;
 }
-.nav-design:hover, .nav-logos:hover, .nav-about:hover, .nav-user-search:hover {
+.nav-design:hover, .nav-logos:hover, .nav-about:hover, .nav-home:hover {
   color:                #660000;
 }
+
 
 /* top hero image */
 
@@ -229,7 +235,7 @@ h2 {
   font-size:            1.25em;
 }
 
-/* first row of articles */
+/* section - images */
 
 .section-split-left {
   padding:              2em 1em 0em 1em;
@@ -250,9 +256,18 @@ h2 {
   padding-left:         1em;
   width:                65%;
 }
-.article-tired, .article-sunny, .article-ripple, .article-patterns, .article-sweet, .article-bubbles, .article-sufjan, .article-orange {
+.article-tired, .article-sunny, .article-ripple, .article-brand1, .article-patterns, .article-sweet, .article-bubbles, .article-sufjan, .article-orange, .article-friends, .article-cheri, .article-swirl, .article-lights, .article-web, .article-close {
   padding-left:         1em;
   width:                50%;
+}
+.article-swirl, .article-lights {
+  padding:              1em;
+}
+.article-web, .article-close {
+  padding:              1em 1em 3em 1em;
+}
+.photo-text {
+  margin-bottom:        1em;
 }
 article {
   position:             relative;
@@ -285,10 +300,10 @@ article {
   padding:              0em 1em 0em 1em;
   float:                left;
 }
-.article-patterns img, .article-sweet img, .article-bubbles img {
+.article-brand1 img, .article-patterns img, .article-sweet img, .article-bubbles img, .article-alt img, .article-friends img {
   border:               1px solid black;
 }
-.article7, .article8, .article9 {
+.article7, .article8, .article9, .article-alt {
   padding-right:        1em;
   width:                33%;
 }
@@ -296,7 +311,7 @@ article {
   padding:              0em 1em 0em 1em;
   float:                left;
 }
-.article-kusama, .article-moon {
+.article-kusama, .article-moon, .article-bird {
   padding:              0em 1em 0em 1em;
   width:                100%;
 }
@@ -305,47 +320,61 @@ article {
   margin-bottom:        2em;
 }
 
-/* white space in between images and footer*/
+/* back to top */
 
 .back-to-top {
-  padding: 4em 0em 4em 0em;
-  text-align: right;
-  margin: 6em 1em 0em 0em;
+  padding:              4em 0em 4em 0em;
+  text-align:           right;
+  margin:               6em 1em 0em 0em;
 }
 .back-to-top a {
-  color: gray;
-  text-decoration: none;
+  color:                gray;
+  text-decoration:      none;
 }
 .back-to-top a:hover {
-  color: #660000;
+  color:                #660000;
 }
 .fa-arrow-up {
-  margin-left: 0.5em;
+  margin-left:          0.5em;
 }
 
-/* page - about */
+/* page - Design */
+.design-section {
+  background:           #EDEDED;
+  padding:              8em 0em 1.5em 0em;
+}
+.design-section h1 {
+  font-size:            1.5em;
+  margin:               2em 0em 0em 0.5em;
+  text-align:           center;
+}
+
+/* page - About */
 
 .about-section {
-  background: #EDEDED;
-  padding: 8em 0em 9em 2em;
-  width: 100%;
+  background:           #EDEDED;
+  padding:              8em 0em 9em 2em;
+  width:                100%;
 }
 .about-text {
-  position: relative;
-  float: left;
-  margin: 4em 1em 0em 1em;
-  width: 70%;
+  position:             relative;
+  float:                left;
+  margin:               4em 1em 0em 1em;
+  width:                70%;
+}
+.about-text h1 {
+  font-size:            1.5em;
 }
 .about-section img {
-  left: 30%;
-  margin: 6em 0em 0em 1em;
+  left:                 30%;
+  margin:               6em 0em 0em 1em;
 }
 .about-section a {
-  color: #660000;
-  text-decoration: none;
+  color:                #660000;
+  text-decoration:      none;
 }
 .about-section a:hover {
-  color: gray;
+  color:                gray;
 }
 
 /* footer */
