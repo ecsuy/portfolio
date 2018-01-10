@@ -204,6 +204,16 @@ h2 {
   color:                #660000;
 }
 
+/* main navigation menu - for small screens */
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+  }
+  .nav-design, .nav-logos, .nav-about {
+    top: 7.5em;
+  }
+}
 
 /* top hero image */
 
@@ -224,8 +234,8 @@ h2 {
   top:                  55%;
   left:                 50%;
   transform:            translate(-50%, -50%);
-  line-height:          1em;
-  padding:              0em 1em;
+  padding:              0.5em 1em 0em 1em;
+  line-height:          1.45em;
   position:             absolute;
 }
 .jumbotron-text h1 {
@@ -237,8 +247,12 @@ h2 {
 
 /* section - images */
 
-.section-split-left {
+#toprow {
   padding:              2em 1em 0em 1em;
+  float:                left;
+}
+.section-split-left {
+  padding:              0em 1em 0em 1em;
   float:                left;
 }
 .section-split-left img, .section-split-right img, .section-half img, .section-full img, .section-thirds img {
@@ -253,7 +267,7 @@ h2 {
   padding:              0em 1em 0em 1em;
   width:                65%;
 }
-.article-tired, .article-sunny, .article-ripple, .article-brand1, .article-patterns, .article-sweet, .article-bubbles, .article-sufjan, .article-orange, .article-friends, .article-cheri, .article-swirl, .article-lights, .article-web, .article-close {
+.article-recordfront, .article-recordback, .article-tired, .article-sunny, .article-ripple, .article-brand1, .article-patterns, .article-sweet, .article-sweetlogo, .article-bubbles, .article-sufjan, .article-orange, .article-friends, .article-cheri, .article-swirl, .article-lights, .article-web, .article-close {
   padding:              0em 1em 0em 1em;
   width:                50%;
 }
@@ -289,7 +303,7 @@ article {
   padding:              0em 1em 0em 1em;
   float:                left;
 }
-.article-levitation img, .article-brand1 img, .article-patterns img, .article-sweet img, .article-bubbles img, .article-alt img, .article-friends img {
+.article-recordfront img, .article-recordback img, .article-levitation img, .article-brand1 img, .article-patterns img, .article-sweet img, .article-bubbles img, .article-alt img, .article-friends img {
   border:               1px solid black;
 }
 .article7, .article8, .article9, .article-alt {
